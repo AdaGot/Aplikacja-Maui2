@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DiceRoller.MainPage">
+
+    <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+
+        <!-- Obrazek -->
+        <Image Source="dice_image.png" Aspect="AspectFill" HeightRequest="200"/>
+
+        <!-- Radio Buttons -->
+        <RadioButton x:Name="RbK6" Content="K6" IsChecked="True"/>
+        <RadioButton x:Name="RbK4" Content="K4"/>
+        <RadioButton x:Name="RbK10" Content="K10"/>
+        <RadioButton x:Name="RbK12" Content="K12"/>
+
+        <!-- Button -->
+        <Button Text="Rzuć kostką" Clicked="OnRollButtonClicked"/>
+
+        <!-- Label -->
+        <Label x:Name="ResultLabel" Text="Wynik" FontSize="32" HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+
+</ContentPage>
